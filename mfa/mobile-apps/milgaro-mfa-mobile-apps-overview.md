@@ -1,7 +1,7 @@
 <h1>M-Pin Mobile Apps Overview</h1>
 <!-- MsoSubtitle -->
 
-<h2 style="margin: 30px 0px 0.5em; padding: 0px 0px 10px; font-size: 2em; color: rgb(33, 133, 197); font-stretch: normal; line-height: 1em; font-family: Arial, sans-serif; border-bottom-width: 1px; border-bottom-style: solid;">Overview</h2>
+<h2>Overview</h2>
 
 <p style="margin: 10px 0px 20px; padding: 0px; line-height: 1.6em; color: rgb(62, 69, 76); font-family: Lato, sans-serif; font-size: 1.4em;">The out-of-band&nbsp;authentication workflow of the mobile app is as follows:</p>
 
