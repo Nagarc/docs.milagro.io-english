@@ -1,3 +1,9 @@
+---
+currentMenu: milagro-mfa-mobile-sdk-user-management-methods-android
+---
+
+<div id="generated-toc" class="generate_from_h2"></div>
+
 <div class="WordSection1">
 <h1>User Management Methods</h1>
 <h2>Overview</h2>

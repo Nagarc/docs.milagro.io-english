@@ -1,3 +1,10 @@
+---
+currentMenu: milagro-mfa-mobile-sdk-registration-methods-android
+---
+
+<div id="generated-toc" class="generate_from_h2"></div>
+
+
 <h1>Registration Methods</h1>
 <h2>Overview</h2>
 <p class="MsoNormal">This section provides a list and brief description of the Registration methods used in the Milagro MFA Mobile SDK for Android. The methods detail the process of registering a new User.</p>

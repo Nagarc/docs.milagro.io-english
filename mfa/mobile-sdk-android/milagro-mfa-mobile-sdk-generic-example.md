@@ -1,4 +1,10 @@
-<h1><span style="font-size: 32px;">Generic app code example</span></h1>
+---
+currentMenu: milagro-mfa-mobile-sdk-generic-example-android
+---
+
+<div id="generated-toc" class="generate_from_h2"></div>
+
+<h1>Generic app code example</span></h1>
 <h2>Overview</h2>
 <p class="MsoNormal">This page provides a generic code example of an app for Android to help you get started with the SDK. It demonstrates the full user registration/authentication cycle in its correct succession:</p>
 

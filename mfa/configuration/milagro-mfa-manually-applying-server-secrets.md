@@ -1,4 +1,8 @@
-<h1>Server secret configuration for clusters</h1>
+---
+currentMenu: milagro-mfa-manually-applying-server-secrets
+---
+
+##Server secret configuration for clusters
 <!-- MsoSubtitle -->
 
 <h2>Introduction</h2>

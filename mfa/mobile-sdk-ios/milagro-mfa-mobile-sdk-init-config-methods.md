@@ -2,6 +2,9 @@
 currentMenu: milagro-mfa-mobile-sdk-init-config-methods-ios
 ---
 
+<div id="generated-toc" class="generate_from_h2"></div>
+
+
 <div class="WordSection1">
 <h1>Initialization and Configuration Methods - Milagro MFA Mobile SDK for IOS</h1>
 <h2 class="MsoNormal">Overview</h2>

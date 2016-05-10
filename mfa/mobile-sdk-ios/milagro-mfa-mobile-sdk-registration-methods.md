@@ -2,6 +2,9 @@
 currentMenu: milagro-mfa-mobile-sdk-registration-methods-ios
 ---
 
+<div id="generated-toc" class="generate_from_h2"></div>
+
+
 <div class="WordSection1">
 <h1>Registration  Methods - Milagro MFA <strong>Mobile SDK for iOS</strong></h1>
 <h2>Overview</h2>
@@ -9,7 +12,7 @@ currentMenu: milagro-mfa-mobile-sdk-registration-methods-ios
 <p class="MsoNormal">To view the other methods, refer to the <a href="#">API Reference</a> page.</p>
 
 </div>
-<h1 style="margin: 0px 0px 40px; padding: 0px; font-size: 3em; font-stretch: normal; font-family: Lato, sans-serif; color: #2185c5; width: 958.906px; text-align: left; background-color: #ffffff;"><span class="CVXCodeinText"><b style="font-style: inherit;"><span style="font-family: 'Courier New'; font-size: 42px;">StartRegistration</span></b></span></h1>
+###StartRegistration
 <h2>Description</h2>
 <p style="margin: 0px 0px 16px; padding: 0px; line-height: 25.6px; color: #333333; font-family: 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, freesans, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'; font-size: 16px; box-sizing: border-box; background-color: #ffffff;">This method initializes the registration for a User that has already been created. The server starts the registration flow, sending the necessary requests to the back-end service. The State of the User instance will change to <code style="box-sizing: border-box; font-family: Consolas, 'Liberation Mono', Menlo, Courier, monospace; font-size: 13.6px; padding: 0.2em 0px; margin: 0px; border-radius: 3px; background-color: rgba(0, 0, 0, 0.0392157);">STARTED_REGISTRATION</code>. The status will indicate whether the operation was successful or not. During this call, an M-Pin ID for the end-user will be issued by the RPS and stored within the user object. The RPA can also start a user identity verification procedure, by sending a verification e-mail.</p>
 <p style="margin: 0px 0px 16px; padding: 0px; line-height: 25.6px; color: #333333; font-family: 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, freesans, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'; font-size: 16px; box-sizing: border-box; background-color: #ffffff;">The application can also pass additional <code style="box-sizing: border-box; font-family: Consolas, 'Liberation Mono', Menlo, Courier, monospace; font-size: 13.6px; padding: 0.2em 0px; margin: 0px; border-radius: 3px; background-color: rgba(0, 0, 0, 0.0392157);">userData</code> which might help the RPA to verify the user identity. The RPA might decide to verify the identity without starting a verification process. In this case, the returned status from the call will still be <code style="box-sizing: border-box; font-family: Consolas, 'Liberation Mono', Menlo, Courier, monospace; font-size: 13.6px; padding: 0.2em 0px; margin: 0px; border-radius: 3px; background-color: rgba(0, 0, 0, 0.0392157);">OK</code>, but the User State will be set to <code style="box-sizing: border-box; font-family: Consolas, 'Liberation Mono', Menlo, Courier, monospace; font-size: 13.6px; padding: 0.2em 0px; margin: 0px; border-radius: 3px; background-color: rgba(0, 0, 0, 0.0392157);">ACTIVATED</code>.</p>

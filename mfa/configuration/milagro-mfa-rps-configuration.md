@@ -1,4 +1,8 @@
-<h1>RPS Configuration Options Reference</h1>
+---
+currentMenu: milagro-mfa-rps-configuration
+---
+
+#RPS Configuration Options Reference
 
 <p style="margin: 0px; padding: 0px; line-height: 1.6em; font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px;">By default, the configuration file for the Relying Party Service (RPS) resides in:<br />
 <span class="CVXCodeinText" style="font-family: 'Courier New';"><em style="font-weight: inherit;">&lt;installation-folder&gt;</em>/config_rps.py</span></p>
@@ -217,7 +221,7 @@
 			<td id="HadACAB4jYY" style="margin: 0px; padding: 0.5em; font-family: inherit; border: 1px dotted rgb(211, 211, 211); vertical-align: top;"><strong style="font-style: inherit;">syncTime</strong></td>
 			<td style="margin: 0px; padding: 0.5em; font-family: inherit; border: 1px dotted rgb(211, 211, 211); vertical-align: top;">Optional</td>
 			<td style="margin: 0px; padding: 0.5em; font-family: inherit; border: 1px dotted rgb(211, 211, 211); vertical-align: top;">When&nbsp;<em style="font-weight: inherit;">True</em>, the service&nbsp;syncs its time&nbsp;with the MIRACL&#39;s servers; if syncronization fails, the an attemp will be made each 5 seconds until success is achievd. When&nbsp;<em style="font-weight: inherit;">False</em>&nbsp;(recommended), this time synchronization is disabled and the service will rely on the system time.&nbsp;The default is&nbsp;<em style="font-weight: inherit;">False.</em>
-			<div class="warning" style="margin: 0px; padding: 5px 30px; line-height: 1.6em; width: 1014.89px; background: url(&quot;/images/warning.png&quot;) 5px 50% no-repeat rgb(255, 237, 235);">Time synchronization is needed to perform time-based verification. Therefore, if you disable the syncing of the service with the&nbsp;MIRACL&#39;s servers, you should be then syncing your system with an NTP server to ensure that correct and precise system time is&nbsp;maintained.</div>
+			<div class="warning" style="margin: 0px; padding: 5px 30px; line-height: 1.6em; background: url(&quot;/images/warning.png&quot;) 5px 50% no-repeat rgb(255, 237, 235);">Time synchronization is needed to perform time-based verification. Therefore, if you disable the syncing of the service with the&nbsp;MIRACL&#39;s servers, you should be then syncing your system with an NTP server to ensure that correct and precise system time is&nbsp;maintained.</div>
 			</td>
 		</tr>
 		<tr>

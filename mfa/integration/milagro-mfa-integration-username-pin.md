@@ -1,3 +1,11 @@
+---
+currentMenu: milagro-mfa-integration-username-pin
+---
+
+<div id="generated-toc" class="generate_from_h2"></div>
+
+
+
 <h1>Integrating Milagro MFA in a web app</h1>
 This page describes how to create a simple username and password Relying Party Application (RPA) website using Python and then shows you how to convert this application to use Milagro MFA aunthentication.
 <h2>Pre-requisites</h2>

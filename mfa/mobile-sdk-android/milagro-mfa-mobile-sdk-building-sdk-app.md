@@ -1,4 +1,11 @@
-<h1>Building the Milagro MFA Mobile SDK and App for Android</h1>
+---
+currentMenu: milagro-mfa-mobile-sdk-building-sdk-app-android
+---
+
+<div id="generated-toc" class="generate_from_h2"></div>
+
+
+##Building the Milagro MFA Mobile SDK and App for Android</h1>
 <h2>Overview</h2>
 <p class="MsoNormal">This page explains how to build the Milagro MFA Mobile SDK and the app for Android with <em>Android Studio</em>.</p>
 

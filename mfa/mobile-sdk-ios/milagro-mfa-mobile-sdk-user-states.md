@@ -1,3 +1,7 @@
+---
+currentMenu: milagro-mfa-mobile-sdk-user-states-ios
+---
+
 <h1>Understanding User States</h1>
 <h2>Overview</h2>
 <p class="MsoNormal">This page explains briefly what <span style="line-height: 19.2000007629395px;">states</span><span style="line-height: 19.2000007629395px;"> </span><span style="line-height: 1.6em;">the </span><span class="CVXCodeinText" style="line-height: 1.6em;"><span style="font-family: 'Courier New';">User</span></span><span style="line-height: 1.6em;"> objects are in and when they are assigned. </span>A physical user of the Milagro MFA authentication platform is represented by a <span class="CVXCodeinText"><span style="font-family: 'Courier New';">User</span></span> object. The <span class="CVXCodeinText"><span style="font-family: 'Courier New';">User</span></span> object supports several states which shows the progress of the physical user through the stages of the registration process and their current permissions to access the system.</p>

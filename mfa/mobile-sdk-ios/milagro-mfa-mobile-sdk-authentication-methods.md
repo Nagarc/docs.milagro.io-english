@@ -2,6 +2,9 @@
 currentMenu: milagro-mfa-mobile-sdk-user-authentications-methods-ios
 ---
 
+<div id="generated-toc" class="generate_from_h2"></div>
+
+
 <div class="WordSection1">
 <h1>Authentication Methods Reference</h1>
 <h2>Overview</h2>

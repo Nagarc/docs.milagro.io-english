@@ -1,5 +1,10 @@
+---
+currentMenu: milagro-mfa-integrating-pinpad
+---
 
-<h1>Integrating the PIN Pad</h1>
+
+
+##Integrating the PIN Pad
 
 
 

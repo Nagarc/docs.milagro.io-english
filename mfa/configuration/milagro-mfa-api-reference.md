@@ -1,4 +1,11 @@
-<h1 abp="2677">M-Pin Core 4.0 API Reference</h1>
+---
+currentMenu: milagro-mfa-api-reference
+---
+
+<div id="generated-toc" class="generate_from_h2"></div>
+
+
+## M-Pin Core 4.0 API Reference
 
 
 <h2 abp="2761">Acronyms</h2>

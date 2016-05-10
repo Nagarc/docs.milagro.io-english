@@ -1,3 +1,8 @@
+---
+currentMenu: milagro-mfa-mobile-sdk-developer-guide-wp
+---
+
+
 <div class="WordSection1">
 <h1>Developer Guide - M-Pin Mobile SDK for Windows Phones</h1>
 

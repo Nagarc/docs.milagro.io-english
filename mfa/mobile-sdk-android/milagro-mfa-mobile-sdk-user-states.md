@@ -1,3 +1,10 @@
+---
+currentMenu: milagro-mfa-mobile-sdk-user-states-android
+---
+
+<div id="generated-toc" class="generate_from_h2"></div>
+
+
 <h1>Understanding User States</h1>
 <h2>Overview</h2>
 <p class="MsoNormal">This page briefly describes the <span style="line-height: 19.2000007629395px;">states</span><span style="line-height: 19.2000007629395px;"> of </span><span style="line-height: 1.6em;">the </span><span class="CVXCodeinText" style="line-height: 1.6em;"><span style="font-family: 'Courier New';">User</span></span><span style="line-height: 1.6em;"> object and when they are assigned. </span>A physical user is represented by a <span class="CVXCodeinText"><span style="font-family: 'Courier New';">User</span></span> object. The <span class="CVXCodeinText"><span style="font-family: 'Courier New';">User</span></span> object supports several states which shows the progress of the physical user through the various stages of the registration process and their current permissions, in order to access the system.</p>

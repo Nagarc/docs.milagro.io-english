@@ -1,3 +1,8 @@
+---
+currentMenu: milagro-mfa-mobile-sdk-building-sdk-app-wp
+---
+
+
 <div class="WordSection1">
 <h1><span style="font-size:32px;">Building the Milagro MFA Mobile SDK and the M-Pin App for Windows Phone</span></h1>
 
@@ -21,4 +26,6 @@
 	<li>Open&nbsp;<code>MPinSDK.sln</code></li>
 	<li>Select <em>Build-&gt;Build Solution</em>&nbsp;from the menu or build MPinSDK project from the Solution Explorer</li>
 </ol>
+
+
 

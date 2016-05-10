@@ -1,7 +1,12 @@
-<h1>Enabling the HTML5 mobile authentication</h1>
+---
+currentMenu: milagro-mfa-enabling-html5
+---
+
+
+##Enabling the HTML5 mobile authentication
 <!-- MsoSubtitle -->
 
-<p>
+
 In the HTML page in which the Browser PIN Pad is integrated, the Browser PIN Pad should be configured with the URL for the Mobile App via the mobileAppFullURL setting:<span style="color: rgb(153, 153, 153); font-family: Arial, sans-serif; font-size: 1.7em; font-weight: bold; line-height: 1em;">​</span></p>
 
 <pre style="margin-top: 0px; margin-bottom: 20px; padding: 15px; unicode-bidi: embed; border: 1px dotted; font-size: 12px;">

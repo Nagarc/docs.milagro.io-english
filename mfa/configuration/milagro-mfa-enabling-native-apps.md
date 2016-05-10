@@ -1,3 +1,7 @@
+---
+currentMenu: milagro-mfa-enabling-native-apps
+---
+
 <h1>Enabling Native Apps</h1>
 <!-- MsoSubtitle -->
 

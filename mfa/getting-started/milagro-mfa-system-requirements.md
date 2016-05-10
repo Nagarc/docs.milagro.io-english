@@ -1,93 +1,95 @@
+---
+currentMenu: milagro-mfa-system-requirements
+---
+
 <h1>System Requirements</h1>
 
 
 
-<table border="0" cellpadding="0" cellspacing="0">
+<table border="1" cellpadding="0" cellspacing="0">
 	<thead>
 		<tr>
 			<th>
-			<p>Component</p>
+			Component
 			</th>
 			<th>
-			<p>Primary Programming Language</p>
+			Primary Programming Language
 			</th>
 			<th>
-			<p>&nbsp;Supported OS</p>
+			Supported OS
 			</th>
 			<th>
-			<p>&nbsp;Supported Browsers</p>
+			Supported Browsers
 			</th>
 		</tr>
 	</thead>
 	<tbody>
 		<tr>
 			<td>
-			<p>Browser PIN Pad</p>
+			Browser PIN Pad
 			</td>
 			<td>
-			<p>JavaScript</p>
+			JavaScript
 			</td>
 			<td>
 			<ul>
-				<li>Linux/Unix</li>
-				<li>MacOS</li>
+				Linux/Unix</br>
+				MacOS</br>
 			</ul>
 			</td>
 			<td>
 			<ul>
-				<li>Mozilla Firefox 14.0.1+</li>
-				<li>Google Chrome 14.0+</li>
-				<li>Internet Explorer 10+</li>
-				<li>Safari 6.0.4+</li>
-				<li>Opera 12.10+</li>
+				Mozilla Firefox 14.0.1+ </br>
+				Google Chrome 14.0+ </br>
+				Internet Explorer 10+ </br>
+				<br>Safari 6.0.4+ </br>
+				<br>Opera 12.10+ </br>
 			</ul>
 			</td>
 		</tr>
 		
 		<tr>
 			<td>
-			<p>Milagro Server</p>
+			Milagro Server
 			</td>
 			<td>
-			<p>Python (2.6, 2.7)</p>
+			Python (2.6, 2.7)
 			</td>
 			<td>
 			<ul>
-				<li>Ubuntu/Server* 12.04+ 32/64-bit</li>
+				Ubuntu/Server* 12.04+ 32/64-bit
 			</ul>
 			</td>
-			<td>&nbsp;</td>
+			<td></td>
 		</tr>
 		<tr>
 			<td>
-			<p>RPS</p>
+			RPS
 			</td>
 			<td>
-			<p>Python (2.6, 2.7)</p>
+			Python (2.6, 2.7)
 			</td>
 			<td>
 			<ul>
-				<li>Ubuntu/Server* 12.04+ 32/64-bit</li>
+			Ubuntu/Server* 12.04+ 32/64-bit
 			</ul>
 			</td>
 			<td>
-			<p>&nbsp;</p>
 			</td>
 		</tr>
 		<tr>
 			<td>
-			<p>Local D-TA</p>
+			Local D-TA
 			</td>
 			<td>
-			<p>Python (2.6, 2.7)</p>
+			Python (2.6, 2.7)
 			</td>
 			<td>
 			<ul>
-				<li>Ubuntu/Server* 12.04+ 32/64-bit</li>
+			Ubuntu/Server* 12.04+ 32/64-bit
 			</ul>
 			</td>
 			<td>
-			<p>&nbsp;</p>
 			</td>
 		</tr>
 	</tbody>

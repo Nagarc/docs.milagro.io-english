@@ -1,3 +1,9 @@
+---
+currentMenu: milagro-mfa-mobile-sdk-user-states-wp
+---
+
+<div id="generated-toc" class="generate_from_h2"></div>
+
 <h1>Understanding User States</h1>
 
 <h2>Summary</h2>

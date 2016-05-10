@@ -1,3 +1,6 @@
+---
+currentMenu: milagro-mfa-overview
+---
 
 <div id="generated-toc" class="generate_from_h2"></div>
 
@@ -5,19 +8,19 @@
 <!-- MsoSubtitle -->
 
 
-<h2>Zero-Knowledge Proof Protocol Concept Overview</h2>
+## Zero-Knowledge Proof Protocol Concept Overview
 
-<p>A&nbsp;<a href="http://en.wikipedia.org/wiki/Zero-knowledge_proof" style="color: rgb(39, 137, 177); text-decoration: none;" target="_blank">zero-knowledge proof&nbsp;</a>protocol is a method by which one party (the prover) can prove to another party (the verifier) that a given statement is true, without conveying any additional information apart from the fact that the statement is indeed true. Proving that one possesses certain knowledge is, in most cases, trivial if one is allowed to simply reveal that knowledge; the challenge is proving that one has such knowledge without revealing it or without revealing anything else.</p>
+A <a href="http://en.wikipedia.org/wiki/Zero-knowledge_proof" target="_blank">zero-knowledge proof </a>protocol is a method by which one party (the prover) can prove to another party (the verifier) that a given statement is true, without conveying any additional information apart from the fact that the statement is indeed true. Proving that one possesses certain knowledge is, in most cases, trivial if one is allowed to simply reveal that knowledge; the challenge is proving that one has such knowledge without revealing it or without revealing anything else.
 
-<h2>Milagro Authentication Background</h2>
+## Milagro Authentication Background
 
-<p>Milagro authentication is the Apache licensed version of the M-Pin Protocol. It was first introduced in academic circles over a decade ago by Dr. Michael Scott, MIRACL&#39;s chief cryptographer, and has been cited over three thousand times in cryptographic research since initial publication. To date, no known theoretical or practical attacks exist against it.</p>
+Milagro authentication is the Apache licensed version of the M-Pin Protocol. It was first introduced in academic circles over a decade ago by Dr. Michael Scott, MIRACL's chief cryptographer, and has been cited over three thousand times in cryptographic research since initial publication. To date, no known theoretical or practical attacks exist against it.
 
-<div class="info">For more information on the M-Pin Protocol in general, refer to the M-Pin cryptographic white papers available on the&nbsp;<a href="http://www.MIRACL.com/" style="color: rgb(39, 137, 177); text-decoration: none;" target="_blank">MIRACL website</a>&nbsp;in the&nbsp;<a href="http://cdn2.hubspot.net/hubfs/230906/miracl/white_papers/MIRACL_M-Pin_ZeroFactor.pdf?t=1454680982288" style="color: rgb(39, 137, 177); text-decoration: none;" target="_blank">MIRACL Labs</a>&nbsp;section.</div>
+**For more information on the M-Pin Protocol in general, refer to the M-Pin cryptographic white papers available on the <a href="http://www.MIRACL.com/" target="_blank">MIRACL website</a> in the <a href="http://cdn2.hubspot.net/hubfs/230906/miracl/white_papers/MIRACL_M-Pin_ZeroFactor.pdf?t=1454680982288" target="_blank">MIRACL Labs</a> section.**
 
-<h2>Protocol Overview</h2>
+## Protocol Overview ##
 
-<p>Milagro Authentication is based on a zero-knowledge proof authentication protocol using proven, strong, standards-based elliptic curve cryptography:</p>
+Milagro Authentication is based on a zero-knowledge proof authentication protocol using proven, strong, standards-based elliptic curve cryptography:
 
 <ul style="margin: 5px 0px 0px 20px; padding: 0px 0px 0px 12px; font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px;">
 	<li>Server Keys and Client Keys are issued according to elliptic curve cryptography principles, and the server can tell whether a client key comes from the right elliptic curve set.</li>

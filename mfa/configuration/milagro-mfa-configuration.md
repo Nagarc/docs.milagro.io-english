@@ -1,11 +1,12 @@
+---
+currentMenu: milagro-mfa-configuration
+---
 
-<div class="info">For installation and initial setup information, see&nbsp;<a hqid="1688047" href="../getting-started/milagro-mfa-developer-guide.html" style="text-decoration: none; color: rgb(126, 206, 253); transition-duration: 0.3s;">Milagro MFA Developer Guide</a>.
-<br>
-<br />
+**For installation and initial setup information, see <a href="../getting-started/milagro-mfa-developer-guide.html">Milagro MFA Developer Guide</a>**.
 
-<h2>Configuration Files Locations</h2>
+#Configuration Files Locations
 
-<p style="margin: 10px 0px 20px; padding: 0px; line-height: 1.6em; color: rgb(62, 69, 76); font-family: Lato, sans-serif; font-size: 1.4em;">The default locations of the configuration files are given below:</p>
+The default locations of the configuration files are given below:
 
 <ul style="margin: 5px 0px 0px 20px; padding: 0px 0px 0px 12px; font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px;">
 	<li><strong style="font-style: inherit;">RPS</strong>:&nbsp;<span class="CVXCodeinText" style="font-family: 'Courier New';"><em style="font-weight: inherit;">&lt;installation-folder&gt;</em>/config_rps.py</span></li>

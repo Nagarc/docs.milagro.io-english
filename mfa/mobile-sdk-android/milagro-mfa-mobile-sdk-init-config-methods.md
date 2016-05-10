@@ -1,3 +1,9 @@
+---
+currentMenu: milagro-mfa-mobile-sdk-init-config-methods-android
+---
+
+<div id="generated-toc" class="generate_from_h2"></div>
+
 <h1><span style="font-size: 28px;">Initialization and Configuration Methods</span></h1>
 <h2>Overview</h2>
 <p class="MsoNormal">This page provides a list and brief description of the Initialization and Configuration methods used in the Milagro Mobile SDK for Android. They relate to initializing the SDK and configuring the back-end URL.</p>

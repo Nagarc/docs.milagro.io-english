@@ -1,12 +1,16 @@
-<h1>D-TA Configuration Options Reference</h1>
+---
+currentMenu: milagro-mfa-d-ta-configuration
+---
+
+
+##D-TA Configuration Options Reference
 <!-- MsoSubtitle -->
 
-<p id="HadACAdGJ3N" style="margin: 0px; padding: 0px; line-height: 1.6em; font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px;">The configuration file for the Customer D-TA service resides in:<br />
+The configuration file for the Customer D-TA service resides in:
 <span class="CVXCodeinText" style="font-family: 'Courier New';"><em style="font-weight: inherit;">&lt;installation-folder&gt;</em>/config_dta.py</span></p>
 
-<p style="margin: 0px; padding: 0px; line-height: 1.6em; font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px;"></p>
-
-<p id="HadACAIhWUC" style="margin: 0px; padding: 0px; line-height: 1.6em; font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px;">The table below lists alphabetically the available Customer D-TA configuration options.&nbsp;&nbsp;An option is considered required if its absence from the configuration file produces a system error.</p>
+The table below lists alphabetically the available Customer D-TA configuration options.
+An option is considered required if its absence from the configuration file produces a system error.
 
 <table class="confluenceTable" style="border-collapse: collapse; border-spacing: 0px; border: 1px dotted rgb(211, 211, 211); color: rgb(0, 0, 0); font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px;">
 	<tbody>
@@ -18,7 +22,7 @@
 		<tr>
 			<td class="confluenceTd" style="margin: 0px; padding: 0.5em; font-family: inherit; border: 1px dotted rgb(211, 211, 211); vertical-align: top;"><strong style="font-style: inherit;">address</strong></td>
 			<td class="confluenceTd" style="margin: 0px; padding: 0.5em; font-family: inherit; border: 1px dotted rgb(211, 211, 211); vertical-align: top;">Required</td>
-			<td class="confluenceTd" style="margin: 0px; padding: 0.5em; font-family: inherit; border: 1px dotted rgb(211, 211, 211); vertical-align: top;">IP address of the local interface on which the service is listening. A value of&nbsp;<em style="font-weight: inherit;">0.0.0.0</em>&nbsp;means listening on all interfaces. The default listening interface is 127.0.0.1.</td>
+			<td class="confluenceTd" style="margin: 0px; padding: 0.5em; font-family: inherit; border: 1px dotted rgb(211, 211, 211); vertical-align: top;">IP address of the local interface on which the service is listening. A value of <em style="font-weight: inherit;">0.0.0.0</em> means listening on all interfaces. The default listening interface is 127.0.0.1.</td>
 		</tr>
 		<tr>
 			<td class="confluenceTd" style="margin: 0px; padding: 0.5em; font-family: inherit; border: 1px dotted rgb(211, 211, 211); vertical-align: top;"><strong style="font-style: inherit;">backup</strong></td>
@@ -39,7 +43,7 @@
 		<tr>
 			<td class="confluenceTd" style="margin: 0px; padding: 0.5em; font-family: inherit; border: 1px dotted rgb(211, 211, 211); vertical-align: top;"><strong>credentialsFile</strong></td>
 			<td class="confluenceTd" style="margin: 0px; padding: 0.5em; font-family: inherit; border: 1px dotted rgb(211, 211, 211); vertical-align: top;">Required</td>
-			<td class="confluenceTd" style="margin: 0px; padding: 0.5em; font-family: inherit; border: 1px dotted rgb(211, 211, 211); vertical-align: top;">Path and name of the file&nbsp;storing the&nbsp;M-Pin Server Credentials.&nbsp;The default is&nbsp;<em style="font-weight: inherit;">&lt;installation-folder&gt;</em>/credentials.json.&nbsp;</td>
+			<td class="confluenceTd" style="margin: 0px; padding: 0.5em; font-family: inherit; border: 1px dotted rgb(211, 211, 211); vertical-align: top;">Path and name of the file&nbsp;storing the&nbsp;Milagro Server Credentials.&nbsp;The default is&nbsp;<em style="font-weight: inherit;">&lt;installation-folder&gt;</em>/credentials.json.&nbsp;</td>
 		</tr>
 		<tr>
 			<td class="confluenceTd" style="margin: 0px; padding: 0.5em; font-family: inherit; border: 1px dotted rgb(211, 211, 211); vertical-align: top;"><strong style="font-style: inherit;">encrypt_master_secret</strong></td>
@@ -69,7 +73,7 @@
 		<tr>
 			<td class="confluenceTd" style="margin: 0px; padding: 0.5em; font-family: inherit; border: 1px dotted rgb(211, 211, 211); vertical-align: top;"><strong style="font-style: inherit;">passphrase</strong></td>
 			<td class="confluenceTd" style="margin: 0px; padding: 0.5em; font-family: inherit; border: 1px dotted rgb(211, 211, 211); vertical-align: top;">Conditional, Required</td>
-			<td class="confluenceTd" style="margin: 0px; padding: 0.5em; font-family: inherit; border: 1px dotted rgb(211, 211, 211); vertical-align: top;">A pre-set passphrase to the backup of the Master Secret if the Master Secret is to be backed up in encrypted form. The passphrase is used for generating the AES key for the Master Secret encryption. If not set (default), the M-Pin System admin will be prompted to generate the passphrase when the encryption is attempted. Pre-setting the pass-phrase is not recommended for security reasons.<br />
+			<td class="confluenceTd" style="margin: 0px; padding: 0.5em; font-family: inherit; border: 1px dotted rgb(211, 211, 211); vertical-align: top;">A pre-set passphrase to the backup of the Master Secret if the Master Secret is to be backed up in encrypted form. The passphrase is used for generating the AES key for the Master Secret encryption. If not set (default), the Milagro System admin will be prompted to generate the passphrase when the encryption is attempted. Pre-setting the pass-phrase is not recommended for security reasons.<br />
 			<br />
 			Required if the&nbsp;<strong style="font-style: inherit;">encrypt_master_secret</strong>&nbsp;option is set to&nbsp;<em style="font-weight: inherit;">True</em>.</td>
 		</tr>
@@ -81,7 +85,7 @@
 		<tr>
 			<td class="confluenceTd" style="margin: 0px; padding: 0.5em; font-family: inherit; border: 1px dotted rgb(211, 211, 211); vertical-align: top;"><strong>salt</strong></td>
 			<td class="confluenceTd" style="margin: 0px; padding: 0.5em; font-family: inherit; border: 1px dotted rgb(211, 211, 211); vertical-align: top;">Conditional, Required</td>
-			<td class="confluenceTd" style="margin: 0px; padding: 0.5em; font-family: inherit; border: 1px dotted rgb(211, 211, 211); vertical-align: top;">A pre-set salt value to be used for generating the AES key for the&nbsp;encryption of the&nbsp;<span style="font-family: inherit;">Master Secret. The M-Pin Core instalation provides a randomly generated pre-set salt value, yet,</span>&nbsp;for security reasons,&nbsp;<span style="font-family: inherit;">it is strongly recommended to change that value with a randomly generated string of your own.</span><br />
+			<td class="confluenceTd" style="margin: 0px; padding: 0.5em; font-family: inherit; border: 1px dotted rgb(211, 211, 211); vertical-align: top;">A pre-set salt value to be used for generating the AES key for the&nbsp;encryption of the&nbsp;<span style="font-family: inherit;">Master Secret. The Milagro Core instalation provides a randomly generated pre-set salt value, yet,</span>&nbsp;for security reasons,&nbsp;<span style="font-family: inherit;">it is strongly recommended to change that value with a randomly generated string of your own.</span><br />
 			<br />
 			Required if the&nbsp;<strong>encrypt_master_secret</strong>&nbsp;option is set to&nbsp;<em style="font-weight: inherit;">True</em>.</td>
 		</tr>
@@ -89,7 +93,7 @@
 			<td style="margin: 0px; padding: 0.5em; font-family: inherit; border: 1px dotted rgb(211, 211, 211); vertical-align: top;"><strong style="font-style: inherit;">syncTime</strong></td>
 			<td style="margin: 0px; padding: 0.5em; font-family: inherit; border: 1px dotted rgb(211, 211, 211); vertical-align: top;">Optional</td>
 			<td style="margin: 0px; padding: 0.5em; font-family: inherit; border: 1px dotted rgb(211, 211, 211); vertical-align: top;">When&nbsp;<em style="font-weight: inherit;">True</em>, the the service&nbsp;syncs its time&nbsp;with the MIRACL&#39;s servers; if syncronization fails, the an attemp will be made each 5 seconds until success is achievd. When&nbsp;<em style="font-weight: inherit;">False</em>&nbsp;(recommended), this time synchronization is disabled and the service will rely on the system time.&nbsp;The default is&nbsp;<em style="font-weight: inherit;">False</em>.
-			<div class="warning" style="margin: 0px; padding: 5px 30px; line-height: 1.6em; width: 1093.94px; background: url(&quot;/images/warning.png&quot;) 5px 50% no-repeat rgb(255, 237, 235);">Time synchronization is needed to perform time-based verification. Therefore, if you disable the syncing of the service with the&nbsp;MIRACL&#39;s servers, you should be then syncing your system with an NTP server to ensure that correct and precise system time is&nbsp;maintained.</div>
+<div class="warning" style="margin: 0px; padding: 5px 30px; line-height: 1.6em; background: url(&quot;/images/warning.png&quot;) 5px 50% no-repeat rgb(255, 237, 235);">Time synchronization is needed to perform time-based verification. Therefore, if you disable the syncing of the service with the&nbsp;MIRACL&#39;s servers, you should be then syncing your system with an NTP server to ensure that correct and precise system time is&nbsp;maintained.</div>
 			</td>
 		</tr>
 		<tr>

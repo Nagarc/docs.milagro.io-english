@@ -1,3 +1,10 @@
+---
+currentMenu: milagro-mfa-mobile-sdk-generic-example-wp
+---
+
+<div id="generated-toc" class="generate_from_h2"></div>
+
+
 <div class="WordSection1">
 <h1><span style="font-size:32px;">Generic M-Pin App Code Example - Milagro MFA Mobile SDK for Windows Phone</span></h1>
 

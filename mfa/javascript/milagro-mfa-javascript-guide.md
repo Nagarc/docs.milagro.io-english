@@ -1,3 +1,11 @@
+---
+currentMenu: milagro-mfa-mobile-sdk-developer-guide
+---
+
+<div id="generated-toc" class="generate_from_h2"></div>
+
+
+
 Milagro MFA JavaScript Client
 =======================
 
