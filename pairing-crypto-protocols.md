@@ -37,10 +37,6 @@ Classic two-factor solutions are in fact often hierarchical and two-level. A key
 
 Disjointed technologies are used by each factor. Typically a password (or a biometric) might be used to unlock an authentication key stored in a file.
 
-Strictly speaking, this solution is only one factor, as it is only this authentication key that is required, and an attacker would be satisfied if they could obtain this without knowing the password.
-
-However since this is probably not possible, we accept that the overall effect is two-factor authentication.
-
 Software encryption might be used as the locking mechanism, but since a brute force attack will discover the authentication key, the password must become a large hard-to-remember pass-phrase.
 
 The alternative (which achieves the same functionality as two-factor M-Pin) is to lock the authentication key into a secure hardware vault. Now a short PIN can be used to unlock it.
@@ -93,8 +89,8 @@ Protocols | Use Cases
 M-Pin 1-Pass | Digital signature authentication in battery or bandwidth constrained environments such as IoT devices, embedded applications and mobile apps. <br>This should be considered the default implementation for client to server authentication suitable for almost all use cases.
 M-Pin 1-Pass + <br>M-Pin 2-Pass | Digital signature and client to server authentication in smartphones apps, desktop browsers and software applications.
 M-Pin 2-Pass | Client to server authentication in smartphone apps, desktop browsers and software applications.
-M-Pin FULL | Mutual client and server authentication with authenticated key agreement for use in smartphone apps, hardware and software applications. <br>Authenticated Key Agreement with PFS can be used as the basis for TLS sessions between clients and servers.
-Chow-Choo | Mutual peer to peer authentication with authenticated key agreement for use in smartphone apps, hardware and software applications. <br>Authenticated Key Agreement with PFS can be used as the basis for TLS sessions between clients and servers and peer to peer.
+M-Pin FULL | Mutual client and server authentication with authenticated key agreement for use in smartphone apps, hardware and software applications. <br>Authenticated Key Agreement with PFS can be used as key exchange algorithm in TLS-Handshake sessions between clients and servers.
+Chow-Choo | Mutual peer to peer authentication with authenticated key agreement for use in smartphone apps, hardware and software applications. <br>Authenticated Key Agreement with PFS can be used as key exchange algorithm in TLS-Handshake sessions between clients and servers and peer to peer.
 </markdeep>
 
 ---
@@ -107,9 +103,7 @@ These clients or peers become the only entities that know the completed whole ke
 
 As outlined in the previous section, Type-3 pairings were selected as they are the most efficient pairing and will work with non-supersingular pairing-friendly curves.
 
-These operate as $G_1$ x $G_2 \rightarrow G_T$, where $G_2$ is a particular group of points, again of the order $q$, but on a twisted elliptic curve defined over an extension which is a divisor of $k$.
-
-These curves can be constructed to be a near perfect fit at any required level of security <a href="#freeman-scott-teske">1</a>. The pairing protocols within the Milagro framework all work on a Type-3 pairing.
+These curves can be constructed to be a near perfect fit at any required level of security <a href="#freeman-scott-teske">1</a>.
 
 One of the novel aspects of pairing-based cryptography is that deployed secrets are commonly represented as points on an elliptic curve, which are the result of multiplying a known point by a master secret $s$.
 
@@ -159,7 +153,7 @@ As opposed to Chow-Choo, which can be used in a client to server as well as a pe
 
 To embellish the security of the client-server protocol, it is important that client and server secrets should be kept distinct.
 
-A simple way to do this is to exploit the structure of a Type-3 pairing and put client secrets in $G_1$ and the server secret in $G_2$ as previously noted in the preceding section.
+A simple way to do this is to exploit the structure of a Type-3 pairing and put client secrets in $G_1$ and the server secret in $G_2$.
 
 For a Type-3 pairing there is assumed to be no computable isomorphism between these groups, even though both are of the same order.
 
@@ -227,8 +221,6 @@ The first thing to note is that both the client and the server can already calcu
 
 This protocol requires another general hash function $H_g(.)$ which serializes, and hashes its input to a 256-bit value. Both sides can then extract a key from this value $K$.
 
-It is left as a simple exercise for the reader to confirm that both client and server end up with the same key.
-
 Note that since the first part of the protocol is just the original M-Pin protocol, all of its features and extensions still apply.
 
 ---
@@ -269,15 +261,13 @@ These keys may be embedded at the time of manufacture, by the manufacturer actin
 
 When a Thing needs to communicate with another Thing, an action which requires knowing only the identity of the other, both parties can activate the Chow-Choo Protocol to calculate the same key to encrypt their communication.
 
-For both sending and receiving, Alice is issued with $sA_1$ and $sA_2$, where $A_1=H_1$ and $A_2=H_2$ both in the $ID = Alice$.
+Let's make an example. Let Alice and Bob be two communicating Things both sending and receiving. Alice is issued with $sA_1$ and $sA_2$, where $A_1=H_1(ID)$ and $A_2=H_2(ID)$ (where ID is its identity), as this describes where they can appear in the pairing (i.e. $A_1$ is in $G_1$, $A_2$ is in $G_2$). Similarly Bob is issued with $sB_1$ and $sB_2$. 
 
-Similarly Bob is issued with $sB_1$ and $sB_2$. Now if Alice initiates and Bob responds, Alice calculates the key as $e(sA_1,B_2)$ and Bob can calculate the same key as $e(A_1,sB_2)$, where by convention the initiator uses their *sender* key and the responder uses their *receiver* key.
-
-One thing we can exploit -- in any communication context there is an initiator and a responder, or a *sender* and *receiver*, if you will.
-
-In the above example, Alice and Bob both were issued *sender* and *receiver* keys respectively, as this describes where they can appear in the pairing.
+Based on the fact if they are *sending* or *receiving*, Alice and Bob use one of those two secret to agree a common key. By convention the initiator uses their *sender* key and the responder uses their *receiver* key.
 
 An obvious advantage is to issue each Thing with two keys, one in $G_1$ and the other in $G_2$, **if** the Thing is approved to send and receive.
+
+Another thing we can exploit in any communication context is that there is an initiator and a responder, or a *sender* and *receiver*, if you will.
 
 However, the capability exists to cryptographically bound Things to only receiving information, or only sending information, based upon whether or not a Thing has been issued a sender and / or a receiver key.
 
