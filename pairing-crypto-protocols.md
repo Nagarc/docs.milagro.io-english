@@ -17,36 +17,6 @@ The genesis of the M-Pin Protocol was first put forward in a research paper by [
 
 The M-Pin Protocol has been iterated on several times over the years since, to develop three distinct modes, which will be explored in the following sections.
 
-The M-Pin Protocol is intended to replace the well-known Username/Password authentication mechanism which is widely considered to be effectively broken.
-
-The main problem is the existence of a **password file** on the server, which is commonly stolen and hacked, revealing most user passwords.
-
-The idea behind M-Pin is that each registered client is issued with a cryptographic identity based encryption key. They then prove to a server that they are in possession of this key using a zero-knowledge proof protocol, which can be extended to include authenticated key agreement.
-
-This protocol design eliminates the need for any information related to clients, or their keys, to be kept on the authentication server.
-
-Common to both Chow-Choo and M-Pin is that the keys are issued in fractions, not as whole keys, by the Distributed Trust Authorities. Only the clients, who receive the fractions from various D-TA's, will ever know the completed whole keys.
-
-Industry commentators have long advocated a multi-factor solution. The novel feature of M-Pin and Chow-Choo is that the cryptographic secrets issued to clients or peers may be safely split up into any number of independent factors.
-
-Each of these factors has the same form; they are points on an elliptic curve. To recreate the original secret, they are simply added together again -- ***it's as simple as that***.
-
-One factor might be derived from a short 4-digit PIN. Another might be a *token* conveniently stored in an authenticator app on a smartphone.
-
-Classic two-factor solutions are in fact often hierarchical and two-level. A key generated from one factor is used to unlock the other.
-
-Disjointed technologies are used by each factor. Typically a password (or a biometric) might be used to unlock an authentication key stored in a file.
-
-Strictly speaking, this solution is only one factor, as it is only this authentication key that is required, and an attacker would be satisfied if they could obtain this without knowing the password.
-
-However since this is probably not possible, we accept that the overall effect is two-factor authentication.
-
-Software encryption might be used as the locking mechanism, but since a brute force attack will discover the authentication key, the password must become a large hard-to-remember pass-phrase.
-
-The alternative (which achieves the same functionality as two-factor M-Pin) is to lock the authentication key into a secure hardware vault. Now a short PIN can be used to unlock it.
-
-However, secure hardware is expensive and may not be supported on all devices. Another downside of this classic approach is that the extension to multi-factor authentication is not at all obvious.
-
  As noted in [Milagro Crypto Concepts](milagro-concepts.html), the M-Pin Protocol is of these classifications and exploits the features of:
 * Elliptic Curve Cryptography
 * Pairing Based Cryptography
@@ -252,6 +222,7 @@ Note that since the first part of the protocol is just the original M-Pin protoc
 | $K=H_g((g_1.{g_2}^\alpha)^{r+h} \| x{W})$ | $K=H_g(e(R+hA,sQ) \| w{U})$ |
 
 ---
+Note that the transmission of $R$ from the client to the server can be done at the same time as $V$ is transmitted, and the transmission of $W$ from the server to the client can be done at the same time as $y$ is transmitted, to avoid introducing any extra flows into the protocol.
 
 ### Chow-Choo Protocol
 
