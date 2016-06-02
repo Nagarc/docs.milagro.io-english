@@ -113,6 +113,8 @@ Observe that the permit is of no use to any other party, and hence can be issued
 
 A proof of security for this idea in the context of Boneh and Franklin IBE can be found in \cite{tseng-tsai}.
 
+
+
 ## Secret Protection with Subliminal Channels
 
 ## Secure Bootstraping
