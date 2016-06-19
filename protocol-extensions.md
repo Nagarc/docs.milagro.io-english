@@ -168,9 +168,34 @@ We assume that the server is authenticated to the client in a standard way, perh
 
 This protocol attempts to prove in zero knowledge to the server that the owner of the claimed identity $ID$ is in possession of the value $sA$ issued to it by the TA, where $A=H_1(ID)$. The same TA has issued the secret $sQ \in \G_2$ to the server, where $Q$ is a fixed public point in $\G_2$.
 
-Correctness follows immediately from the well known bilinearity property of the pairing. See Table \ref{Simple}.
+Correctness follows immediately from the well known bilinearity property of the pairing. See Fig. 1 below.
 
-|Alice - identity $ID_a$|Server|
+<figure>
+  <caption><strong>Figure 1.</strong> A Simple Authentication Protocol</caption>
+</figure>
+
+|Client|Server|
 |:----------------------:|:----------------------:|
+|Generates random $x<q$||
+|$A=H_1(ID)$||
+|$U=x{A}$||
+|$V=-x{sA}$||
+|$ID$, $U$, $V \rightarrow$||
+| |$A=H_1(ID)$|
+| |$g=e(V,Q).e(U,sQ)$|
+| |if $g \ne 1$, reject ~|
+
+As an authentication protocol this has some obvious deficiencies (for example it is subject to a simple replay attack). These deficiencies are addressed in further sections, but for now this serves as a foundation to illustrate the solution. Next we introduce a small error $\epsilon$ into the client's secret $sA$. See Fig 2. below.
+
+|Client|Server|
+|:----------------------:|:----------------------:|
+|Generates random $x<q$||
+|$A=H_1(ID)$||
+|$U=x{A}$||
+|$V=-x{(s-\epsilon)A}$||
+|$ID$, $U$, $V \rightarrow$||
+| |$A=H_1(ID)$|
+| |$g=e(V,Q).e(U,sQ)=e(U,Q)^\epsilon$|
+| |Solve for $\epsilon$|
 
 ## Secure Bootstraping
