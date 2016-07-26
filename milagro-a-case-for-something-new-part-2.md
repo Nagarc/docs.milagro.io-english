@@ -93,6 +93,8 @@ By tracing a path from the Merkle root to the target hash, we can generate a Mer
 
 This system enables a person, app or thing to verify a receipt by checking a Bitcoin transaction and using math to verify the data. At any point, any actor can peruse the Blockchain looking for evidence of a rouge issuance of a share of a key in its identity.
 
+The Blockchain becomes a shared identity database in which multiple entities validate different aspects of a people, app or things identity. Although each such certification stands alone, the blockchain provides a useful way to bring everything together in a unified way that can add layers of trust and experience to each particular entity in the ecosystem.
+
 These ideas and concepts are further explored in the following section.
 
 Next section: [A Distributed Trust Proposal](milagro-distributed-trust-proposal.html)
